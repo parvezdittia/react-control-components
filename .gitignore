@@ -2,10 +2,6 @@
 node_modules/
 dist/
 
-# Ignore IDE and editor files
-.idea/
-.vscode/
-
 # Ignore system and OS files
 .DS_Store
 Thumbs.db
