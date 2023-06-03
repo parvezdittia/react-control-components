@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from 'react';
 
-interface IfProps {
+export interface IfProps {
   condition: boolean;
   children: ReactNode;
 }

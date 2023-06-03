@@ -10,6 +10,9 @@ describe('If', () => {
       </If>
     );
 
+
+
+
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
