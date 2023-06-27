@@ -22,7 +22,7 @@
     "component",
     "npm"
   ],
-  "author": "Your Name",
+  "author": "Parvez Dittia",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.1",
