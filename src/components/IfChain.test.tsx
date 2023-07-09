@@ -3,7 +3,13 @@ import IfChain from './IfChain';
 import If from './If';
 import renderer from 'react-test-renderer';
 
-describe('IfChain component', () => {
+describe('If chain component contains valid child components', () => {
+  it('does not render a string', () => {
+    const tree = renderer.create(<IfChain>Hello world</IfChain>).toJSON();
+  });
+});
+
+describe('IfChain component contains valid child component', () => {
   it('renders without errors when all children are If components', () => {
     const tree = renderer
       .create(
@@ -17,10 +23,10 @@ describe('IfChain component', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('throws an error when an invalid child component is present', () => {
-    // Mock console.error to suppress error logging in the console
-    //console.error = jest.fn();
+  //test for isValidElement
+  //test of valid element but not a valid If component
 
+  it('throws an error when an invalid child component is present', () => {
     const tree = renderer
       .create(
         <IfChain>
@@ -32,20 +38,5 @@ describe('IfChain component', () => {
       .toJSON();
 
     expect(tree).toMatchSnapshot();
-
-    // Restore console.error
-    //console.error = consoleError;
   });
-
-  // it('renders the correct number of valid child components', () => {
-  //     const { container } = render(
-  //         <IfChain>
-  //             <If condition={true}>Child 1</If>
-  //             <If condition={false}>Child 2</If>
-  //             <If condition={true}>Child 3</If>
-  //             <If condition={true}>Child 4</If>
-  //         </IfChain>
-  //     );
-  //     expect(container.children.length).toBe(3); // Only 3 valid If components
-  // });
 });
