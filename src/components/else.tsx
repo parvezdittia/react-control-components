@@ -4,8 +4,8 @@ export interface ElseProps {
   children: ReactNode;
 }
 
-const Else: FC<ElseProps> = ({ children }) => {
+export const Else: FC<ElseProps> = ({ children }) => {
   return <>{children}</>;
 };
 
-export default Else;
+
