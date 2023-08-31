@@ -5,11 +5,9 @@ export interface ElseIfProps {
   children: ReactNode;
 }
 
-const ElseIf: FC<ElseIfProps> = ({ condition, children }) => {
+export const ElseIf: FC<ElseIfProps> = ({ condition, children }) => {
   if (condition) {
     return <>{children}</>;
   }
   return null;
 };
-
-export default ElseIf;
