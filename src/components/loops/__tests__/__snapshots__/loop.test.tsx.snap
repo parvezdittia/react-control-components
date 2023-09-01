@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Loop /> should render children for each item in the source array  1`] = `
+[
+  <span>
+    1
+  </span>,
+  <span>
+    2
+  </span>,
+  <span>
+    3
+  </span>,
+]
+`;
+
+exports[`<Loop /> should render null when source array is empty 1`] = `null`;
