@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import If from './If';
+import { If } from '..';
 
 describe('If', () => {
   it('renders the component correctly with children if condition is true', () => {
