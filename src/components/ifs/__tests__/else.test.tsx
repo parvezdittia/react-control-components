@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Else from '../else';
+import { Else } from '..';
 
 describe('<Else />', () => {
   it('renders the component correctly', () => {

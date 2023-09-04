@@ -7,5 +7,3 @@ export interface ElseProps {
 export const Else: FC<ElseProps> = ({ children }) => {
   return <>{children}</>;
 };
-
-
