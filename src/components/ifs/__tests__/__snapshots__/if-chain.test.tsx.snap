@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<IfChain /> should handle nested IfChain 1`] = `
+<span>
+  4
+</span>
+`;
+
+exports[`<IfChain /> should render the first child if truthy 1`] = `
+<span>
+  1
+</span>
+`;
+
+exports[`<IfChain /> should render the first elseif truthy child 1`] = `
+<span>
+  2
+</span>
+`;
+
+exports[`<IfChain /> should render the last child if no truthy child 1`] = `
+<span>
+  3
+</span>
+`;
+
+exports[`<IfChain /> should render the second elseif truthy child 1`] = `
+<span>
+  3
+</span>
+`;
+
+exports[`<IfChain /> should throw error if a child between the first and last is not an ElseIf 1`] = `"Invalid IfChain"`;
+
+exports[`<IfChain /> should throw error if the first child is not an If 1`] = `"Invalid IfChain"`;
+
+exports[`<IfChain /> should throw error if the last child is not an Else 1`] = `"Invalid IfChain"`;
+
+exports[`<IfChain /> should work when only <If /> is child 1`] = `
+<span>
+  1
+</span>
+`;
