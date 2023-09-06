@@ -1,5 +1,5 @@
 import { Children, ReactNode, isValidElement } from 'react';
-import { Else, ElseIf, If } from '../components';
+import { Else, ElseIf, If } from '../components/ifs';
 
 export const isValidChain = (children: ReactNode) => {
   const childrenArray = Children.toArray(children);

@@ -1,7 +1,6 @@
-import { Else, ElseIf, If } from '../../components';
+import { Else, ElseIf, If } from '../../components/ifs';
 import { isValidChain } from '../is-valid-chain';
 import React from 'react';
-
 
 describe('isValidChain', () => {
   it('should return true if chain is valid', () => {
