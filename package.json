@@ -1,35 +1,46 @@
 {
-  "name": "my-component",
-  "version": "1.0.0",
-  "description": "My React component",
+  "name": "react-control-components",
+  "version": "1.0.1",
+  "description": "Conditional rendering and looping for react components",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "tsc -p tsconfig.json",
     "start": "webpack-dev-server --config webpack.config.js --open",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "lint": "eslint src",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "npm run lint && npm run test && npm run build",
     "prettify": "prettier --write .",
-    "precommit": "lint-staged --config lint-staged.config.js"
+    "precommit": "lint-staged --config lint-staged.config.js",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/parvezdittia/react-control-components"
   },
+  "bugs": {
+    "url": "https://github.com/parvezdittia/react-control-components/issues"
+  },
   "keywords": [
     "react",
     "component",
-    "npm"
+    "conditional",
+    "conditional rendering",
+    "looping",
+    "control",
+    "control components"
   ],
-  "author": "Parvez Dittia",
+  "author": "Parvez Dittia <parvezdittia@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.1",
     "@types/react": "^18.2.6",
     "@types/react-test-renderer": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
     "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-prettier": "^8.10.0",
     "husky": "^7.0.4",
     "jest": "^29.5.0",
     "lint-staged": "^11.2.6",
@@ -39,9 +50,15 @@
     "ts-loader": "^9.2.6",
     "typescript": "^4.9.5",
     "webpack": "^5.60.0",
-    "webpack-cli": "^4.9.1"
-  },
-  "dependencies": {
+    "webpack-cli": "^4.9.1",
     "react-test-renderer": "^18.2.0"
-  }
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ]
 }
