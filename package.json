@@ -11,7 +11,7 @@
     "test:coverage": "jest --coverage",
     "lint": "eslint src",
     "prepublishOnly": "npm run lint && npm run test && npm run build",
-    "prettify": "prettier --write .",
+    "prettify": "prettier --write",
     "precommit": "lint-staged --config lint-staged.config.js",
     "lint-staged": "lint-staged",
     "prepare": "husky install"
