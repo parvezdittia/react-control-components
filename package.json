@@ -1,6 +1,6 @@
 {
   "name": "react-control-components",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Conditional rendering and looping for react components",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
